@@ -48,14 +48,15 @@ a, a:link, a:visited, a:active, a:hover {
 
 .introbg{
 	width: 100%;
-	height:700px;
+	height:95vh;
 	background-color:black;
-
+	background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%), url('./img/frontpage.png') center center no-repeat;
+	background-size: cover;
 }
+
 
 .upperNav{
 	padding:15px;
-
 }
 
 .bglogo{
@@ -83,7 +84,6 @@ a, a:link, a:visited, a:active, a:hover {
 	color:white;
 	font-family: "Avenir Next";
 	margin-top:80px;
-	
 }
 
 .introTitle{
@@ -92,7 +92,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .introP{
-	font-weight: 300;
+	font-weight:400;
 	font-size:22px;
 	margin-top:20px;
 	margin-bottom:40px;
@@ -112,7 +112,7 @@ a, a:link, a:visited, a:active, a:hover {
 	margin-top: 60px
 }
 
-.misHeader{
+.section-header{
 	font-family: "Avenir Next";
 	font-weight: 600;
 	font-size:42px;
@@ -121,9 +121,9 @@ a, a:link, a:visited, a:active, a:hover {
 	margin-top:40px;
 }
 
-.misText{
+.section-text{
 	font-family: "Avenir Next";
-	font-weight: 300;
+	font-weight: 400;
 	font-size:22px;
 	text-align: center;
 	margin-top:20px;
@@ -133,7 +133,6 @@ a, a:link, a:visited, a:active, a:hover {
 .imgHolder{
 	width:100%;
 	height:400px;
-	background-color:gray;
 	position: relative;
 }
 
@@ -144,50 +143,44 @@ a, a:link, a:visited, a:active, a:hover {
 	font-size:32px;
 	position: absolute;
 	bottom:10px;
-
-
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
+.imgHolder#mis1{
+	background: url("./img/mission-1.png") center center no-repeat;
+	background-size: cover;
+}
 
+.imgHolder>.redOpacity{
+	background: rgba(170, 28, 0, 0);
+	width: 100%;
+	height: 100%;
+	transition: 0.5s all;
+}
 
+.imgHolder>.redOpacity:hover{
+	background: rgba(170, 28, 0, 0.3);
+}
 
+.imgHolder#mis2{
+	background: url("./img/mission-2.png") center center no-repeat;
+	background-size: cover;
+	transition: all 1000ms linear;
+}
 
+/*.imgHolder#mis1:hover{
+	background: linear-gradient( rgba(170, 28, 0, 0.4), rgba(170, 28, 0, 0.4) ), url("./img/mission-1.png") center center no-repeat !important;
+	background-size: cover !important;
+}
 
-
+.imgHolder#mis2:hover{
+	background: linear-gradient( rgba(170, 28, 0, 0.4), rgba(170, 28, 0, 0.4) ), url("./img/mission-2.png") center center no-repeat !important;
+	background-size: cover !important;
+}*/
 
 .footer{
 	width:100%;
 	height:200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
