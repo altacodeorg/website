@@ -134,6 +134,7 @@ a, a:link, a:visited, a:active, a:hover {
 	width:100%;
 	height:400px;
 	position: relative;
+	overflow-y: hidden;
 }
 
 .imgTitle{
@@ -146,6 +147,20 @@ a, a:link, a:visited, a:active, a:hover {
 	text-align: center;
 	width: 100%;
 	margin-bottom: 20px;
+	transition: 0.5s transform;
+}
+
+.imgDesc{
+	color:white;
+	font-family: "Avenir Next";
+	font-weight: 400;
+	font-size:30px;
+	position: absolute;
+	bottom:-100px;
+	text-align: center;
+	width: 100%;
+	padding:0 20px;
+	transition: 0.5s transform;
 }
 
 .imgHolder#mis1{
@@ -160,8 +175,15 @@ a, a:link, a:visited, a:active, a:hover {
 	transition: 0.5s all;
 }
 
+.imgHolder>.hoverTarget{
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+}
+
 .imgHolder>.redOpacity:hover{
-	background: rgba(170, 28, 0, 0.3);
 }
 
 .imgHolder#mis2{
