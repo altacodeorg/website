@@ -73,11 +73,13 @@ a, a:link, a:visited, a:active, a:hover {
 	font-weight: 600;
 	float:right;
 	padding:15px 20px;
+	cursor:pointer;
 }
 
 .intrologo{
 	margin-left:15px;
 	margin-top:5px;
+	display: block
 }
 
 .introText{
@@ -109,7 +111,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .misImages{
-	margin-top: 60px
+	margin-top: 40px
 }
 
 .section-header{
@@ -189,6 +191,10 @@ a, a:link, a:visited, a:active, a:hover {
 	transition: all 1000ms linear;
 }
 
+.imgCard{
+	margin-bottom:20px;
+}
+
 /*.imgHolder#mis1:hover{
 	background: linear-gradient( rgba(170, 28, 0, 0.4), rgba(170, 28, 0, 0.4) ), url("./img/mission-1.png") center center no-repeat !important;
 	background-size: cover !important;
@@ -199,7 +205,15 @@ a, a:link, a:visited, a:active, a:hover {
 	background-size: cover !important;
 }*/
 
-.helpSection {
+
+.divider{
+	margin:auto;
+	border: 1px solid #E0E0E0;
+	width:60%;
+	margin-top:60px;
+}
+
+.helpSection{
 	margin-top:40px;
 }
 
@@ -340,5 +354,52 @@ a, a:link, a:visited, a:active, a:hover {
 
 .footer {
 	width:100%;
-	height:200px;
+	height:250px;
+	background-color:#212121;
+	padding:40px 0px;
 }
+
+
+.footerLogo{
+	display: block
+}
+
+.socialIcons{
+
+	color:white;
+	font-size: 28px;
+	display: inline-block;
+	margin-right:10px;
+	margin-left:10px;
+
+}
+
+.footerText{
+	color:gray;
+	font-family: "Avenir Next";
+	font-weight:400;
+	margin-top:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
