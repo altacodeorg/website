@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </head>
 <body>
@@ -13,10 +14,10 @@
 		<div class="gradient"> </div>
 		<div class = "upperNav">
 		
-			<div class = "navButton">CONTACT</div>
-			<div class = "navButton">GET INVOLVED</div>
-			<div class = "navButton">TEAM</div>
-			<div class = "navButton">MISSION</div>
+			<div id = "contactNav" class = "navButton">CONTACT</div>
+			<div id = "get-involvedNav" class = "navButton">GET INVOLVED</div>
+			
+			<div id = "missionNav" class = "navButton">MISSION</div>
 		
 			<img src = "altacodeLogo.png" width = "250px" class = "intrologo"/>
 		</div>
@@ -31,7 +32,7 @@
 		</div> 
 	</div>
 
-	<div class = "mission">
+	<div class = "mission"  id = "mission">
 		<div class = "container">
 			<p class = "section-header">What We Do</p>
 
@@ -45,7 +46,7 @@
 					</div>
 				</div>
 
-				<div class = "col-6">
+				<div class = "col-6" >
 					<div class = "imgHolder" id="mis2">
 						<div class="redOpacity"></div>
 						<center><p class = "imgTitle">Teaching!</p></center>
@@ -55,7 +56,7 @@
 		</div>		
 	</div>
 
-	<div class = "get-involved">
+	<div class = "get-involved" id = "get-involved">
 		<div class = "container">
 			<p class = "section-header">Getting Involved</p>
 
@@ -112,7 +113,56 @@
 
 
 	<div class = "footer">
+		<center>
+			<img src = "altacodeLogo.png" width = "250px" class = "footerLogo"/>
+			
+			<a href = "#" ><i class="fab fa-slack socialIcons"></i></a>
+			<a href = "#" ><i class="fab fa-facebook-square socialIcons"></i></a>
+			<a href = "#" ><i class="fab fa-github socialIcons"></i></a>
+			<a href = "#" ><i class="fab fa-linkedin socialIcons"></i></a>
+			<p class = "footerText">Altacode. All rights reserved.</p>
+
+		</center>
 	</div>
+
+	<script type="text/javascript">
+		$("#missionNav").click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( "#mission" ).offset().top
+		    }, 600);
+		    return false;
+		});
+
+		$("#get-involvedNav").click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( "#get-involved" ).offset().top
+		    }, 600);
+		    return false;
+		});
+
+		$("#contactNav").click(function(){
+		    $('html, body').animate({
+		        scrollTop: $( "#contactSection" ).offset().top
+		    }, 600);
+		    return false;
+		});
+
+		
+	</script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
