@@ -175,7 +175,7 @@ a, a:link, a:visited, a:active, a:hover {
 	transition: 0.5s all;
 }
 
-.imgHolder>.hoverTarget{
+.imgHolder>.hoverTarget {
 	background-color: rgba(0,0,0,0);
 	width: 100%;
 	height: 100%;
@@ -183,10 +183,7 @@ a, a:link, a:visited, a:active, a:hover {
 	top:0;
 }
 
-.imgHolder>.redOpacity:hover{
-}
-
-.imgHolder#mis2{
+.imgHolder#mis2 {
 	background: url("./img/mission-2.png") center center no-repeat;
 	background-size: cover;
 	transition: all 1000ms linear;
@@ -202,15 +199,15 @@ a, a:link, a:visited, a:active, a:hover {
 	background-size: cover !important;
 }*/
 
-.helpSection{
+.helpSection {
 	margin-top:40px;
 }
 
-.helpCol{
+.helpCol {
 	margin-bottom: 50px
 }
 
-.helpCard{
+.helpCard {
 	height:465px;
 	border-radius: 10px;
 	background-color:black;
@@ -218,22 +215,20 @@ a, a:link, a:visited, a:active, a:hover {
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
 }
 
-.helpImg{
+.helpImg {
 	height:300px;
 	border-radius:8px 8px 0px 0px;
-	
 	background-size: cover;
 	background-position: center; 
 }
 
-.helpText{
+.helpText {
 	height:165px;
-	
 	padding:0 10%;
 	border-radius:0px 0px 8px 8px;
 }
 
-.helpDesc{
+.helpDesc {
 	font-family: "Avenir Next";
 	font-weight:300;
 	text-align: center;
@@ -241,7 +236,7 @@ a, a:link, a:visited, a:active, a:hover {
 	padding-top:25px;
 }
 
-.helpTitle{
+.helpTitle {
 	font-family: "Avenir Next";
 	font-weight:600;
 	text-align: center;
@@ -250,55 +245,100 @@ a, a:link, a:visited, a:active, a:hover {
 	font-size:22px;
 	padding:10px;
 	width:150px;
-	border-radius:5px;
-	
+	border-radius:5px;	
 }
 
 
-#volunteer>.helpImg{
-	background-image:url("http://i0.kym-cdn.com/photos/images/original/001/316/888/f81.jpeg");
+#volunteer>.helpImg {
+	background-image:url("./img/getting-involved-4.png");
 }
 
-#volunteer>.helpText{
+#volunteer>.helpText {
 	background-color:#EF5350;
 }
 
-#volunTitle{
+#volunTitle {
 	background-color:#B71C1C;
 }
 
-#donate>.helpImg{
-	background-image:url("https://image.shutterstock.com/z/stock-photo-down-syndrome-man-with-banana-73675411.jpg");
+#donate>.helpImg {
+	background-image:url("./img/getting-involved-2.png");
 }
 
-#donate>.helpText{
+#donate>.helpText {
 	background-color:#66BB6A;
 }
 
-#donateTitle{
+#donateTitle {
 	background-color:#1B5E20;
 }
 
-#contact>.helpImg{
-	background-image:url("https://thumb9.shutterstock.com/display_pic_with_logo/210376/585027202/stock-photo-desperate-man-chooses-commit-suicide-method-585027202.jpg");
+#contact>.helpImg {
+	background-image:url("./img/getting-involved-3.png");
 }
 
-#contact>.helpText{
+#contact>.helpText {
 	background-color:#5C6BC0;
 }
 
-#contactTitle{
+#contactTitle {
 	background-color:#1A237E;
 }
 
+.contact-form {
+	background: linear-gradient(rgba(170,28,0, 0.74), rgba(170,28,0, 0.74)), url("./img/map.png");
+	background-size: cover;
+	padding: 30px 0;
+}
 
+.contact-form .submitBtn{
+	outline:none;
+	background: transparent;
+	border:1px solid white;
+	width:150px;
+	font-weight: 600;
+	float:right;
 
+}
 
+.section-header.contact-title {
+	color:white;
+}
 
+.section-text.contact-text {
+	color:white;
+}
 
+.contactRow input, textarea{
+	background-color: transparent;
+	border: 1px solid white;
+	color:white;
+	display:block;
+	margin: 10px;
+	width: 100%;
+	font-size: 24px;
+	font-family: "Open Sans";
+	font-weight: 400;
+	padding:10px;
+}
 
+.contactRow input::placeholder, textarea::placeholder{
+	color:white;
+}
 
-.footer{
+.contactRow .action-items {
+	color:white;
+	font-size: 54px;
+	width: 100%;
+	margin:auto;
+}
+
+.section-text.contact-text.contact-info{
+	text-align: left;
+	font-size:32px;
+}
+
+.footer {
 	width:100%;
 	height:200px;
 }
