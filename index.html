@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>altacode</title>
+	<title>Altacode | Bridging the digital divide</title>
+	<meta name="description" content="Altacode is a 501(c)(3) organization that helps bridge the digital divide in emerging countries and inspires students to succeed in their respective fields.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -22,26 +28,31 @@
 	</script>
 
 	<script type="text/javascript" src="https://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"200b5719b85b64fb02896ee41","lid":"badf6ad7af"}) })</script>
-
 </head>
 <body>
 	<div class = "introbg">
 		<div class="gradient"></div>
 		<div class = "upperNav">
-
-
-			<div id = "contactNav" class = "navButton">CONTACT</div>
-			<div id = "get-involvedNav" class = "navButton">GET INVOLVED</div>
-
-			<div id = "missionNav" class = "navButton">MISSION</div>
-
-
+			<div class="" id="mobileNav" style="display:none;width:50%;height:1000px;background-color:rgba(0,0,0,0.8);position: fixed;z-index:4567;">
+				<div id="cross" style="margin-right:0px;padding:10px 20px;font-size:50px;color:white;">
+					&#735;
+				</div>
+				<div id = "missionNav" class = "navButton">MISSION</div>
+				<div id = "get-involvedNav" class = "navButton">GET INVOLVED</div>
+				<div id = "contactNav" class = "navButton">CONTACT</div>
+			</div>
+			<div id="threebar" style="margin-right:0px;padding:10px 20px;color:white;"> ☰ </div>
+			<div class="regNavbar">
+				<div id = "contactNav" class = "navButton">CONTACT</div>
+				<div id = "get-involvedNav" class = "navButton">GET INVOLVED</div>
+				<div id = "missionNav" class = "navButton">MISSION</div>
+			</div>
 			<img src = "altacodeLogo.png" width = "250px" class = "intrologo"/>
 		</div>
 
 		<div class = "container ">
 			<div class = "introText">
-				<p class = "introTitle">Closing the digital divide</p>
+				<p class = "introTitle">Bridging the digital divide</p>
 				<p class = "introP">Technology is meant to connect people over all barriers. <br> Let's help the next generation make it that way. </p>
 
 				<!--a href = "#" class = "newsButton">GET INFO</a-->
@@ -107,7 +118,7 @@
 
 						<div class = "helpText" >
 							<p class = "helpDesc">Help us raise funds to maximize our impact in the area.</p>
-							<center><p class = "helpTitle" id = "donateTitle"><a href="mailto:team@altacode.org">Donate</a></p></center>
+							<center><p class = "helpTitle" id = "donateTitle"><a href="https://www.gofundme.com/manage/help-bridge-digital-divide">Donate</a></p></center>
 						</div>
 					</div>
 				</div>
@@ -147,10 +158,11 @@
 
 				<div class = "col-md-4 col-sm-12">
 					<p class="section-text contact-text contact-info"><b><a href="mailto:team@altacode.org">team@altacode.org</a></b></p>
+					<p class="section-text contact-text contact-info"><b><a href="tel:5109253704">(510) 925-3704</a></b></p>
 					<div class="action-items">
-						<i class="fab fa-facebook-messenger"></i>
+						<!--i class="fab fa-facebook-messenger"></i>
 						<a href="https://github.com/altacodeorg"><i class="fab fa-github"></i></a>
-						<i class="fab fa-slack"></i>
+						<i class="fab fa-slack"></i-->
 					</div>
 
 				</div>
@@ -162,10 +174,10 @@
 		<center>
 			<img src = "altacodeLogo.png" width = "250px" class = "footerLogo"/>
 
-			<a href = "#" ><i class="fab fa-slack socialIcons"></i></a>
-			<a href = "#" ><i class="fab fa-facebook-square socialIcons"></i></a>
-			<a href = "#" ><i class="fab fa-github socialIcons"></i></a>
-			<a href = "#" ><i class="fab fa-linkedin socialIcons"></i></a>
+			<!--a href = "#" ><i class="fab fa-slack socialIcons"></i></a>
+			<a href = "#" ><i class="fab fa-facebook-square socialIcons"></i></a-->
+			<a href = "https://github.com/altacodeorg" ><i class="fab fa-github socialIcons"></i></a>
+			<a href = "https://www.linkedin.com/company/altacodeorg/" ><i class="fab fa-linkedin socialIcons"></i></a>
 			<p class = "footerText">Altacode. All rights reserved.</p>
 
 		</center>
@@ -192,9 +204,7 @@
 		}, 600);
 		return false;
 	});
-
-
 	</script>
-
+	<script type="text/javascript" src="navbar.js"></script>
 </body>
 </html>
