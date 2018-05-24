@@ -5,11 +5,23 @@
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="./animations.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119806977-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-119806977-1');
+	</script>
+
+	<script type="text/javascript" src="http://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"200b5719b85b64fb02896ee41","lid":"badf6ad7af"}) })</script>
 
 </head>
 <body>
@@ -17,16 +29,16 @@
 		<div class="gradient"></div>
 		<div class = "upperNav">
 
-		
+
 			<div id = "contactNav" class = "navButton">CONTACT</div>
 			<div id = "get-involvedNav" class = "navButton">GET INVOLVED</div>
-			
+
 			<div id = "missionNav" class = "navButton">MISSION</div>
 
-		
+
 			<img src = "altacodeLogo.png" width = "250px" class = "intrologo"/>
 		</div>
-		
+
 		<div class = "container ">
 			<div class = "introText">
 				<p class = "introTitle">Closing the digital divide</p>
@@ -34,7 +46,7 @@
 
 				<!--a href = "#" class = "newsButton">GET INFO</a-->
 			</div>
-		</div> 
+		</div>
 	</div>
 
 	<div class = "mission"  id = "mission">
@@ -64,7 +76,7 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 
 	<hr class = "divider" />
@@ -112,7 +124,7 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 
 	<div class = "contact-form" id="contactSection">
@@ -140,16 +152,16 @@
 						<a href="https://github.com/altacodeorg"><i class="fab fa-github"></i></a>
 						<i class="fab fa-slack"></i>
 					</div>
-					
+
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 
 	<div class = "footer">
 		<center>
 			<img src = "altacodeLogo.png" width = "250px" class = "footerLogo"/>
-			
+
 			<a href = "#" ><i class="fab fa-slack socialIcons"></i></a>
 			<a href = "#" ><i class="fab fa-facebook-square socialIcons"></i></a>
 			<a href = "#" ><i class="fab fa-github socialIcons"></i></a>
@@ -160,43 +172,29 @@
 	</div>
 
 	<script type="text/javascript">
-		$("#missionNav").click(function(){
-		    $('html, body').animate({
-		        scrollTop: $( "#mission" ).offset().top
-		    }, 600);
-		    return false;
-		});
+	$("#missionNav").click(function(){
+		$('html, body').animate({
+			scrollTop: $( "#mission" ).offset().top
+		}, 600);
+		return false;
+	});
 
-		$("#get-involvedNav").click(function(){
-		    $('html, body').animate({
-		        scrollTop: $( "#get-involved" ).offset().top
-		    }, 600);
-		    return false;
-		});
+	$("#get-involvedNav").click(function(){
+		$('html, body').animate({
+			scrollTop: $( "#get-involved" ).offset().top
+		}, 600);
+		return false;
+	});
 
-		$("#contactNav").click(function(){
-		    $('html, body').animate({
-		        scrollTop: $( "#contactSection" ).offset().top
-		    }, 600);
-		    return false;
-		});
+	$("#contactNav").click(function(){
+		$('html, body').animate({
+			scrollTop: $( "#contactSection" ).offset().top
+		}, 600);
+		return false;
+	});
 
-		
+
 	</script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
