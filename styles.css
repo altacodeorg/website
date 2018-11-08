@@ -385,10 +385,10 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .footerText{
-	color:gray;
+	color:#fff;
 	font-family: "Avenir Next";
 	font-weight:400;
-	margin-top:30px;
+	margin-top:15px;
 }
 
 #mobileNav{
